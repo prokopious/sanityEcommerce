@@ -1,6 +1,10 @@
 @import '../styles/custom-media.css';
 @import '../styles/custom-properties.css';
 
+* {
+  background-color: whitesmoke;
+}
+
 .content {
   background: var(--color-white);
   min-height: calc(100% - 73px - 120px);

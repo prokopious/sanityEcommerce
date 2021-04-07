@@ -9,6 +9,7 @@ const isProd = process.env.NODE_ENV === "production";
 
 module.exports = {
   plugins: [
+
     {
       resolve: `gatsby-plugin-snipcart-advanced`,
       options: {
@@ -17,7 +18,7 @@ module.exports = {
         defaultLang: "eng",
         currency: "USD",
         openCartOnAdd: true,
-        useSideCart: true,
+        useSideCart: false,
         // be careful with this mode cart. The cart in this mode has a bug of scroll in firefox
         locales: {
           fr: {

@@ -19,8 +19,8 @@ function BlogPost(props) {
   } = props;
   return (
     <article className={styles.root}>   <Container>            <h1 className={styles.title}>{title}</h1> <h2>${props.price}</h2>
-    <button type="button" class="snipcart-add-item"
-data-item-name="Test Product"
+    <button type="button" className="snipcart-add-item"
+data-item-name={title}
 data-item-price={price}
 data-item-id="42"
 data-item-url="/">
@@ -50,7 +50,7 @@ Add to cart
           <aside className={styles.metaContent}>
      
               <div className={styles.categories}>
-                <h3 className={styles.categoriesHeadline}>Categories</h3>
+  
                 <ul>
                   {categories.map((category) => (
                     <li key={category._id}>{category.title}</li>

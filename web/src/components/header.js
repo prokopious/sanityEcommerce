@@ -8,24 +8,15 @@ import * as styles from "./header.module.css";
 const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
   <div className={styles.root}>
     <div className={styles.wrapper}>
-      <div className={styles.branding}>
+      <div className={styles.branding} id="banner">
         <Link to="/">{siteTitle}</Link>
       </div>
 
-      <button
-        className={styles.toggleNavButton}
-        onClick={showNav ? onHideNav : onShowNav}
-      >
-        <Icon symbol="hamburger" />
-      </button>
 
-      <nav className={cn(styles.nav, showNav && styles.showNav)}>
-        <ul>
-          <li>
-            <Link to="/archive/">Archive</Link>
-            <Link to="/">Home</Link>
-          </li>
-        </ul>
+
+      <nav>
+      
+            <Link to="/"><button className="snipcart-checkout">Cart</button></Link>
       </nav>
     </div>
   </div>

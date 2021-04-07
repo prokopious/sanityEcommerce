@@ -10,6 +10,7 @@ import Container from "../components/container";
 import GraphQLErrorList from "../components/graphql-error-list";
 import SEO from "../components/seo";
 import Layout from "../containers/layout";
+import { Helmet } from "react-helmet"
 
 export const query = graphql`
   fragment SanityImage on SanityMainImage {
@@ -69,10 +70,13 @@ const IndexPage = (props) => {
   const { data, errors } = props;
 
   if (errors) {
-    return (
+    return (<>
+         <Helmet>
+         <link href="//db.onlinewebfonts.com/c/37b29158c68de167677fa4a3087d7188?family=Tiempos+Text+Regular" rel="stylesheet" type="text/css"/>
+      </Helmet>
       <Layout>
         <GraphQLErrorList errors={errors} />
-      </Layout>
+      </Layout></>
     );
   }
 
@@ -100,7 +104,7 @@ const IndexPage = (props) => {
         <h1 hidden>Welcome to {site.title}</h1>
         {postNodes && (
           <BlogPostPreviewList
-            title="Latest blog posts"
+            title="Newest prints:"
             nodes={postNodes}
             browseMoreHref="/archive/"
           />

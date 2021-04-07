@@ -3,15 +3,20 @@
 
 .root {
   position: relative;
-  z-index: 100;
+  z-index: 0;
+  border-bottom: 1px solid black;
+}
+* {
+  background-color: whitesmoke;
 }
 
 .wrapper {
   box-sizing: border-box;
   margin: 0 auto;
   max-width: 960px;
-  padding: 1em;
+  padding: 2em;
   display: flex;
+ 
 
   @media (--media-min-small) {
     padding: 1.5em 1.5em;
@@ -21,6 +26,9 @@
 .branding {
   font-weight: 600;
   flex: 1;
+  font-size: 25px;
+ 
+
 
   @nest & a {
     display: inline-block;
@@ -36,25 +44,7 @@
   }
 }
 
-.toggleNavButton {
-  appearance: none;
-  font-size: 25px;
-  border: none;
-  background: none;
-  margin: 0;
-  padding: calc(14 / 17 / 2 * 1rem);
-  outline: none;
-  color: inherit;
 
-  & svg {
-    display: block;
-    fill: inherit;
-  }
-
-  @media (--media-min-small) {
-    display: none;
-  }
-}
 
 .nav {
   display: none;
@@ -75,6 +65,16 @@
       color: var(--color-accent);
     }
   }
+  @media only screen and (max-width: 600px) {
+    .branding {
+      font-size: 10px;
+    }
+
+    #banner {
+      font-size: 10px;
+    }
+  }
+
 
   @media (--media-max-small) {
     position: absolute;
@@ -84,6 +84,10 @@
     left: 0;
     right: 0;
     top: 4.3rem;
+
+    .branding {
+      font-size: 10px;
+    }
 
     @nest & ul {
       padding: 1rem 0;
@@ -96,6 +100,10 @@
 
   @media (--media-min-small) {
     display: block;
+
+    .branding {
+      font-size: 10px;
+    }
 
     @nest & ul {
       list-style: none;

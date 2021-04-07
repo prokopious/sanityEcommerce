@@ -28,22 +28,19 @@ function BlogPostPreview(props) {
       </div>
       <div className={styles.text}>
         <h3 className={cn(responsiveTitle3, styles.title)}>{props.title}</h3>
-        {props._rawExcerpt && (
-          <div className={styles.excerpt}>
-            <PortableText blocks={props._rawExcerpt} />
-          </div>
-        )}
-      
-      </div>
-    </Link>
-    <button type="button" class="snipcart-add-item"
- data-item-name="Test Product"
+        <p>${props.price}</p>
+        <button type="button" className="snipcart-add-item"
+ data-item-name={props.title}
  data-item-price={props.price}
  data-item-id="42"
  data-item-url="/">
   Add to cart
 </button>
-<br></br>
+
+
+      </div>
+    </Link>
+    
     </>
   );
 }
