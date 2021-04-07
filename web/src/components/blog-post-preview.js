@@ -29,6 +29,8 @@ function BlogPostPreview(props) {
       <div className={styles.text}>
         <h3 id="horse" className={cn(responsiveTitle3, styles.title)}>{props.title}</h3>
         <p id="price">${props.price}</p>
+        </div>
+    </Link>
         <button id="but" type="button" className="snipcart-add-item"
  data-item-name={props.title}
  data-item-price={props.price}
@@ -38,8 +40,7 @@ function BlogPostPreview(props) {
 </button>
 
 
-      </div>
-    </Link>
+
     
     </>
   );
