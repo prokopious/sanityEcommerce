@@ -41,8 +41,8 @@ body > div > div {
 .snipcart-add-item {
   align-items: center;
   background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
-  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.25),
-   -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, 0.25),
+   0px -4px 6px 0 rgba(255, 255, 255, 0.3);
   border-radius: 1px;
   display: flex;
   
@@ -60,8 +60,8 @@ body > div > div {
 .snipcart-checkout {
   align-items: center;
   background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
-  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.25),
-   -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, 0.25),
+   0px -4px 6px 0 rgba(255, 255, 255, 0.3);
   border-radius: 1px;
   display: flex;
   
