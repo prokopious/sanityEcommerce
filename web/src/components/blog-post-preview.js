@@ -27,9 +27,9 @@ function BlogPostPreview(props) {
         )}
       </div>
       <div className={styles.text}>
-        <h3 className={cn(responsiveTitle3, styles.title)}>{props.title}</h3>
-        <p>${props.price}</p>
-        <button type="button" className="snipcart-add-item"
+        <h3 id="horse" className={cn(responsiveTitle3, styles.title)}>{props.title}</h3>
+        <p id="price">${props.price}</p>
+        <button id="but" type="button" className="snipcart-add-item"
  data-item-name={props.title}
  data-item-price={props.price}
  data-item-id="42"

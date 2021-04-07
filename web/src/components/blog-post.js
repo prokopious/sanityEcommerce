@@ -18,8 +18,8 @@ function BlogPost(props) {
     publishedAt,
   } = props;
   return (
-    <article className={styles.root}>   <Container>            <h1 className={styles.title}>{title}</h1> <h2>${props.price}</h2>
-    <button type="button" className="snipcart-add-item"
+    <article className={styles.root}>   <Container>            <h1 id="horse" className={styles.title}>{title}</h1> <h2 id="price">${props.price}</h2>
+    <button type="button" id="but" className="snipcart-add-item"
 data-item-name={title}
 data-item-price={price}
 data-item-id="42"

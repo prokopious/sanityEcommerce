@@ -41,50 +41,79 @@ body > div > div {
 .snipcart-add-item {
   align-items: center;
   background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
-  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.25),
    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
   border-radius: 1px;
   display: flex;
   
   justify-content: center;
  
-  background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+  background: linear-gradient(-45deg, rgba(126, 125, 125, 0.22), rgba(255, 255, 255, 0.527));
   border: transparent;
-  padding: 10px 15px;
-  margin: 10px;
+  padding: 10px 25px;
+  color: gray;
+
   font-family: "Tiempos Text Regular";
+  text-decoration: none;
 }
 
 .snipcart-checkout {
   align-items: center;
   background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
-  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.25),
    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
   border-radius: 1px;
   display: flex;
   
   justify-content: center;
  
-  background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+  background: linear-gradient(-45deg, rgba(126, 125, 125, 0.22), rgba(255, 255, 255, 0.527));
   border: transparent;
-  padding: 10px 15px;
-  margin-bottom: 10px;
+  padding: 10px 25px;
+  color: gray;
+
   font-family: "Tiempos Text Regular";
   text-decoration: none;
+  
 }
 
 a {
   text-decoration: none;
   font-size: 16px;
+
 }
 
 
 @media only screen and (max-width: 600px) {
   .branding {
     font-size: 18px;
+    color: gray;
   }
 
   #banner {
     font-size: 18px;
+    color: gray;
   }
+}
+
+#price {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+#horse {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+#but {
+  font-family: "Tiempos Text Regular"; 
+  margin-left: 0px;
+  margin-bottom: 23px;
+}
+
+#shadow {
+  background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+  box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, 0.25),
+   -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
 }
